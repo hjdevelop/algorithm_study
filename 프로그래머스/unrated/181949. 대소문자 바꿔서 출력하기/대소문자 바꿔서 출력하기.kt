@@ -1,12 +1,14 @@
 fun main(args: Array<String>) {
     val s1 = readLine()!!
+    var answer = ""
     
-    for(i in 0..s1.length - 1) {
-        if(s1[i].toInt() >= 65 && s1[i].toInt() <= 90) {
-            print(s1[i].toLowerCase())
+    for (i in s1) {
+        if (i.isLowerCase()) {
+            answer += i.uppercaseChar()
         }
         else {
-            print(s1[i].toUpperCase())
+            answer += i.lowercaseChar()
         }
     }
+    print(answer)
 }
