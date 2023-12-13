@@ -3,7 +3,7 @@ fun main(args: Array<String>) {
     val s1 = input[0]
     val a = input[1]!!.toInt()
     
-    for(i in 0..a - 1) {
+    for (i in 1..a) {
         print(s1)
     }
 }
