@@ -1,10 +1,10 @@
 # [level unrated] 문자열 출력하기 - 181952 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181952) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181952?language=kotlin) 
 
 ### 성능 요약
 
-메모리: 44.4 MB, 시간: 252.59 ms
+메모리: 44.3 MB, 시간: 121.37 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2023년 12월 2일 23:8:24
+2023년 12월 3일 21:5:1
 
 ### 문제 설명
 
