@@ -1,10 +1,5 @@
 fun main(args: Array<String>) {
     val a = readLine()!!.toInt()
-    
-    if(a % 2 == 0) {
-        println("${a} is even")
-    }
-    else {
-        println("${a} is odd")
-    }
+    if (a % 2 == 0) print("${a} is even")
+    else print("${a} is odd")
 }
