@@ -1,11 +1,11 @@
 class Solution {
     fun solution(a: Int, b: Int): Int {
         var answer: Int = 0
-        var x: Int = (a.toString() + b.toString()).toInt()
-        var y: Int = 2 * a * b
+        val num1 = "${a}${b}".toInt()
+        val num2 = 2 * a * b
         
-        if(x > y) answer = x
-        else answer = y
+        if (num1 >= num2) answer = num1
+        else answer = num2
         return answer
     }
 }
