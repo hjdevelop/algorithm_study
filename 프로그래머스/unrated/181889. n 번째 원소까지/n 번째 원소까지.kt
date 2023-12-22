@@ -1,9 +1,3 @@
 class Solution {
-    fun solution(num_list: IntArray, n: Int): IntArray {
-        var answer: IntArray = intArrayOf()
-        for(i in 0..n - 1) {
-            answer = answer.plus(num_list[i])
-        }   
-        return answer
-    }
+    fun solution(num_list: IntArray, n: Int): IntArray = num_list.slice(0..n - 1).toIntArray()
 }
