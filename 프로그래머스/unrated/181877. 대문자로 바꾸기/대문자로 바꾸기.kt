@@ -1,8 +1,7 @@
+import java.util.*
+
 class Solution {
     fun solution(myString: String): String {
-        var answer: String = ""
-        answer = myString.toUpperCase()
-        println(answer)
-        return answer
+        return myString.uppercase(Locale.getDefault())
     }
 }
