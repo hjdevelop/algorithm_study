@@ -1,16 +1,16 @@
 class Solution {
     fun solution(num_list: IntArray): Int {
         var answer: Int = 0
-        var numMul: Int = 1
-        var numSum: Int = 0
+        var mul = 1
+        var pow = 0
         
-        for(i in num_list) {
-            numMul *= i
-            numSum += i
+        for (i in num_list) {
+            mul *= i
+            pow += i
         }
-        numSum *= numSum
-        if(numMul > numSum) answer = 0
-        else answer = 1
+        
+        if (mul < pow * pow) answer = 1
+        else if (mul > pow * pow) answer = 0
         return answer
     }
 }
