@@ -1,17 +1,15 @@
 class Solution {
     fun solution(num_list: IntArray): Int {
-        var answer: Int = 0
-        var temp: Int = 1
-        if(num_list.size >= 11) {
-            for(i in num_list) {
-                answer += i
+        var answer : Int = 0
+        if (num_list.size >= 11) {
+            answer = num_list.reduce() {acc, number ->
+                acc + number
             }
         }
         else {
-            for(i in num_list) {
-                temp *= i
-            }
-            answer = temp
+            answer = num_list.reduce() {acc, number ->
+                acc * number
+            } 
         }
         return answer
     }
