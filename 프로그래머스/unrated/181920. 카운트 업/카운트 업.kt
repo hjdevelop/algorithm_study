@@ -1,14 +1,3 @@
 class Solution {
-    fun solution(start: Int, end: Int): IntArray {
-        var answer: IntArray = intArrayOf()
-        var a: Int = start
-        while(true) {
-            answer = answer.plus(a)
-            if(a == end) {
-                break
-            }
-            a++
-        }
-        return answer
-    }
+    fun solution(start_num: Int, end_num: Int): IntArray = (start_num..end_num).map { it }.toIntArray()
 }
