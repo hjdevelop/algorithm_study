@@ -2,13 +2,16 @@ import java.util.Collections
 
 class Solution {
     fun solution(numbers: IntArray, direction: String): IntArray {
-        val aList = numbers.toList()
+        val list = numbers.toMutableList()
+        
         if (direction == "right") {
-            Collections.rotate(aList, 1)
+            list.add(0, list[list.lastIndex])
+            list.removeAt(list.lastIndex)
         } else {
-            Collections.rotate(aList, -1)
+            list.add(numbers[0])
+            list.removeAt(0)
         }
         
-        return aList.toIntArray()
+        return list.toIntArray()
     }
 }
